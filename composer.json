@@ -1,0 +1,40 @@
+{
+    "name": "mahdiaslami/laravel-mermaid",
+    "description": "Create ER diagram based of the database by MermaidJS",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahdi Aslami Khavari",
+            "email": "mahdyaslami@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/mahdyaslami/laravel-mermaid",
+    "keywords": ["Laravel", "MermaidJS", "Er diagram"],
+    "require": {
+        "illuminate/support": "~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "MahdiAslami\\Database\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MahdiAslami\\Database\\MermaidServiceProvider"
+            ],
+            "aliases": {
+                "Mermaid": "MahdiAslami\\Database\\Facades\\Mermaid"
+            }
+        }
+    }
+}
