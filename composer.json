@@ -1,6 +1,6 @@
 {
     "name": "mahdiaslami/laravel-mermaid",
-    "description": "Create ER diagram based of the database by MermaidJS",
+    "description": "Create ER diagram based on the database by MermaidJS",
     "license": "MIT",
     "authors": [
         {
