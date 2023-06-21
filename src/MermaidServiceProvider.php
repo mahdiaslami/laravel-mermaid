@@ -3,7 +3,7 @@
 namespace MahdiAslami\Database;
 
 use Illuminate\Support\ServiceProvider;
-use MahdiAslami\Database\Console\ShowCommand;
+use MahdiAslami\Database\Console\MermaidCommand;
 
 class MermaidServiceProvider extends ServiceProvider
 {
@@ -46,6 +46,6 @@ class MermaidServiceProvider extends ServiceProvider
      */
     protected function bootForConsole(): void
     {
-        $this->commands([]);
+        $this->commands([MermaidCommand::class]);
     }
 }
