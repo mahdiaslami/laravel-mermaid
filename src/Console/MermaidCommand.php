@@ -40,7 +40,7 @@ class MermaidCommand extends Command
 
         $diagramCode = $this->diagramCode($tables);
 
-        if ($this->hasOption('link')) {
+        if ($this->option('link')) {
             $this->info($this->mermaidEditorUrl($diagramCode));
         } else  {
             $this->info($diagramCode);
